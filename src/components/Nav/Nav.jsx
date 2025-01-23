@@ -4,18 +4,19 @@ import style from "./nav.module.css";
 export default function Nav() {
   return (
     <div
+      className="animate-load"
       style={{
         marginLeft: "50px",
         marginRight: "50px",
         marginTop: "10px",
-        height: "500px",
+        height: "80px",
       }}
     >
-      <nav className="flex justify-between items-center">
+      <nav className="d-flex justify-between items-center">
         <img src="logo.svg" alt="" style={{ width: "50px" }} />
         <div className="flex">
-          <NavLink className={`bg-black ${style.btnNav}`} to={"/"}>
-            Home
+          <NavLink className={` ${style.btnNav}`} to={"/"}>
+            LinkTree
           </NavLink>
           <NavLink
             className={`${style.btnNav}`}

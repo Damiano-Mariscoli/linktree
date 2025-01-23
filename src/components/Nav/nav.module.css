@@ -9,3 +9,11 @@
     cursor: pointer;
 
 }
+.btnNav:hover{
+    transition: all 0.3s ease-in-out;
+    background-color: #333;
+}
+
+.btnNav:not(:hover){
+    transition: all 0.3s ease-in-out;
+}
