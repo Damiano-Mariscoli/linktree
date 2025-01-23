@@ -1,8 +1,11 @@
 import { useState } from "react";
 import ReactDOM from "react-dom";
-import viteLogo from "/vite.svg";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
+import DefaultLayout from "./layouts/defaultLayout";
+import HomePage from "./pages/homePage";
+import About from "./pages/about";
+import Contact from "./pages/contact";
 
 function App() {
   return (
