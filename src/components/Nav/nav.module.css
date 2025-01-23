@@ -1,0 +1,11 @@
+
+
+.btnNav {
+    background-color: black;
+    border: solid 1px white ;
+    border-radius: 9999px;
+    padding: 5px 20px;
+    color: white;
+    cursor: pointer;
+
+}

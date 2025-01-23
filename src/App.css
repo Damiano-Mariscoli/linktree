@@ -3,5 +3,10 @@
 @import 'tailwindcss/utilities';
 
 html{
-  background-color: black;
+ background-color: black;
+}
+
+.active{
+  background-color: white;
+  color: black;
 }
