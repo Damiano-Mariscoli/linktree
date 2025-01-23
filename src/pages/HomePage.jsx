@@ -5,7 +5,7 @@ export default function HomePage() {
       <div className="container animate-load">
         <div className="homeHeader mb-3">
           <img className="user" src="user.svg" alt="" />
-          <h1 className="userName">Link Tree</h1>
+          <h1 className="userName">Damiano Mariscoli</h1>
         </div>
 
         <div className="flex flex-col items-center justify-center row gap-3 mx-auto">

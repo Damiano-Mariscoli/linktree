@@ -1,19 +1,11 @@
 
 
-.btnNav {
-    background-color: black;
-    border: solid 1px white ;
-    border-radius: 9999px;
-    padding: 5px 20px;
-    color: white;
-    cursor: pointer;
-
-}
 .btnNav:hover{
     transition: all 0.3s ease-in-out;
-    background-color: #333;
+    fill: rgb(6, 13, 29);
 }
 
 .btnNav:not(:hover){
     transition: all 0.3s ease-in-out;
 }
+
