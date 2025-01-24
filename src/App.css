@@ -2,11 +2,131 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-html{
- background-color: black;
+
+/* General rules */
+.animate-load {
+  animation: load 1s ease-in-out;
 }
 
-.active{
-  background-color: white;
-  color: black;
+@keyframes load {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+
+html {
+  background-color: #000 !important;
+}
+.active{
+  fill: white;
+  color: white;
+ 
+}
+.active:hover{
+  
+  color: white;
+}
+
+/* Homepage rules */
+
+
+.info{
+ 
+
+  display: flex;
+  justify-content: center;
+  border-radius: 100%;
+  width: 25px;
+  
+}
+.info:hover{
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  fill: white;
+  color: white;
+}
+.info:not(:hover){
+  transition: all 0.3s ease-in-out;
+}
+.user{
+  width: 120px;
+  
+}
+.userName{
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  
+}
+.homeHeader{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.logoTitle{
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-left: 6px;
+}
+
+/* Link list rules */
+.iconName{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 70%;
+}
+.icon{
+width: 30px;
+margin-right: auto;
+margin-left: 40px;
+
+}
+.iconButton{
+ 
+  position: relative;
+  width: 250px;
+  border: solid 1px white;
+  border-radius: 9999px;
+  padding: 3px;
+}
+
+.iconButton:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  background-color: rgb(6, 13, 29);
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.iconButton:hover .iconName {
+  transition: all 0.3s ease-in-out;
+  opacity: 90%;
+}
+.iconButton:not(:hover){
+  
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.iconButton:not(:hover) .iconName{
+  transition: all 0.3s ease-in-out;
+ 
+}
+
+
+
