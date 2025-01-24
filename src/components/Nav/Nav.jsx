@@ -3,22 +3,19 @@ import style from "./nav.module.css";
 
 export default function Nav() {
   return (
-    <div
-      className="animate-load"
-      style={{
-        marginLeft: "50px",
-        marginRight: "50px",
-        marginTop: "10px",
-        height: "80px",
-      }}
-    >
+    <div className="animate-load navBar">
       <nav className="d-flex justify-between items-center">
         <div className="flex flex-row items-end ">
-          <img src="logo.svg" alt="" style={{ width: "50px" }} />
+          <img
+            className="logo"
+            src="logo.svg"
+            alt=""
+            style={{ width: "50px" }}
+          />
           <h2 className="logoTitle">Link Tree</h2>
         </div>
 
-        <div className="flex">
+        <div className="flex gap-xs-1 gap-md-5">
           <NavLink to={"/"}>
             <svg
               viewBox="0 0 16 16"
