@@ -2,7 +2,7 @@ import { useState } from "react";
 import ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import DefaultLayout from "./layouts/defaultLayout";
+import DefaultLayout from "./layouts/DefaultLayout";
 import HomePage from "./pages/HomePage";
 import About from "./pages/about";
 import "./App.css";
